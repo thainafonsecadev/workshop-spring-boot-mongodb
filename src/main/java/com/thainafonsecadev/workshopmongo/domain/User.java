@@ -3,56 +3,62 @@ package com.thainafonsecadev.workshopmongo.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
-	public class User implements Serializable {
-	
-		private static final long serialVersionUID = 1L;
-		
-	private String id;
-	private String name;
-	private String email;
-	
-	public User(String id, String name, String email) {
-		}
+public class User implements Serializable {
 
-		public String getId() {
-			return id;
-	}
+    private static final long serialVersionUID = 1L;
 
-		public void setId(String id) {
-			this.id = id;
-	}
+    private String id;
+    private String name;
+    private String email;
 
-		public String getName() {
-			return name;
-	}
+  
+    public User() {
+    }
 
-		public void setName(String name) {
-			this.name = name;
-	}
+    
+    public User(String id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
 
-		public String getEmail() {
-			return email;
-	}
+    public String getId() {
+        return id;
+    }
 
-		public void setEmail(String email) {
-			this.email = email;
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	@Override
-		public int hashCode() {
-		return Objects.hash(id);
-	}
+    public String getName() {
+        return name;
+    }
 
-	
-	@Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    // hashCode
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
     public String toString() {
         return "User{" +
                "id='" + id + '\'' +
                ", name='" + name + '\'' +
                ", email='" + email + '\'' +
                '}';
-	}
-	
-	
-
+    }
 }
+

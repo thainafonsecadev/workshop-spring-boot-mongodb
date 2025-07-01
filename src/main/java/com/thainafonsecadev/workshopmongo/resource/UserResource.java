@@ -20,9 +20,9 @@ import com.thainafonsecadev.workshopmongo.domain.User;
 	public ResponseEntity<List<User>> findAll(){
 		
 		User maria = new User("1,", "Maria Brown", "maria@gmail.com");
-		User Alex = new User("2", "Alex Grenn", "alex@gmail.com");
+		User alex = new User("2", "Alex Grenn", "alex@gmail.com");
 		List<User> List = new ArrayList<>();
-		List.addAll(Arrays.asList(maria, Alex));
+		List.addAll(Arrays.asList(maria, alex));
 		return ResponseEntity.ok().body(List);
 		
 	}
