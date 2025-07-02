@@ -13,6 +13,8 @@ import com.thainafonsecadev.workshopmongo.domain.User;
 		static void save(List<User> asList) {
 			
 		}
+
+		User findOne(String id);
 	
 
 }
