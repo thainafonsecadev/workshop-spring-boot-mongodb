@@ -51,7 +51,7 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    // hashCode
+    
     @Override
     public int hashCode() {
         return Objects.hash(id);
